@@ -1,0 +1,251 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{geometry}
+\usepackage{ltablex}
+
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+ 
+\title{ohbm_tables}
+\author{Jessica Dafflon}
+\date{November 2023}
+
+\begin{document}
+
+%\maketitle
+
+\section{Human Connectome Project (HCP)}
+List of phenotypes used from the HCP dataset
+\begin{longtable}{ll}
+%\centering
+%\label{tab:phenotypes-hcp}
+%\begin{tabular}{ll}
+\toprule
+\textbf{Variable} & \textbf{Description}\\
+\midrule
+\multicolumn{2}{l}{Alertness}\\
+\midrule
+MMSE\_Score & Mini Mental Status Exam Total Score\\
+PSQI\_Score & Pittsburgh Sleep Questionnaire Total Score\\
+\midrule
+\multicolumn{2}{l}{Cognition (Delay Discounting)}\\
+\midrule
+DDisc\_AUC\_200 & Area Under the Curve for Discounting of \$200\\
+DDisc\_AUC\_40K & Area Under the Curve for Discounting of \$40,000 \\
+\midrule
+\multicolumn{2}{l}{Cognition (NIH Toolbox)}\\
+\midrule
+CardSort\_Unadj & Dimensional Change Card Sort Test: Unadjusted Scale Score\\
+CogCrystalComp\_AgeAdj & Cognition Crystallized Composite: Age Adjusted Scale Score\\
+CogEarlyComp\_AgeAdj & Cognition Early Childhood Composite: Age Adjusted Scale Score\\
+CogFluidComp\_AgeAdj & Cognition Fluid Composite: Age Adjusted Scale Score\\
+CogTotalComp\_AgeAdj & Cognition Total Composite Score: Age Adjusted Scale Score\\
+Flanker\_Unadj & Flanker Inhibitory Control and Attention Test: Unadjusted Scale Score\\
+ListSort\_Unadj & List Sorting Working Memory Test: Unadjusted Scale Score\\
+PicSeq\_AgeAdj & Picture Sequence Memory Test: Age-Adjusted Scale Score\\
+PicVocab\_AgeAdj & Picture Vocabulary Test: Age-Adjusted Scale Score\\
+ProcSpeed\_AgeAdj & Pattern Comparison Processing Speed Test: Age-Adjusted Scale Score\\
+ReadEng\_Unadj & Oral Reading Recognition Test: Unadjusted Scale Score\\
+\midrule
+\multicolumn{2}{l}{Cognition (Penn Tests)}\\
+\midrule
+IWRD\_TOT & Word Memory: Total Number of Correct Responses\\
+PMAT24\_A\_CR & Progressive Matrices\: Number of Correct Responses\\
+SCPT\_SEN & Short Continuous Performance Test\: Sensitivity\\
+SCPT\_SPEC & Short Continuous Performance Test\: Specificity\\
+VSPLOT\_TC & Variable Short Penn Line Orientation Test: Total Number Correct \\
+\midrule
+\multicolumn{2}{l}{Emotion (NIH Toolbox)}\\
+\midrule
+AngAffect\_Unadj & Anger-Affect Survey: Unadjusted Scale Score\\
+AngAggr\_Unadj & Anger-Physical Aggression Survey: Unadjusted Scale Score\\
+AngHostil\_Unadj & Anger-Hostility Survey: Unadjusted Scale Score\\
+FearAffect\_Unadj & Fear-Affect Survey: Unadjusted Scale Score\\
+FearSomat\_Unadj & Fear-Somatic Arousal Survey: Unadjusted Scale Score \\
+EmotSupp\_Unadj & Emotional Support Survey: Unadjusted Scale Score\\
+Friendship\_Unadj & Friendship Survey: Unadjusted Scale Score\\
+InstruSupp\_Unadj & Instrumental Support Survey: Unadjusted Scale Score \\
+LifeSatisf\_Unadj & General Life Satisfaction Survey: Unadjusted Scale Score\\
+Loneliness\_Unadj & Loneliness Survey: Unadjusted Scale Score\\
+MeanPurp\_Unadj & Meaning and Purpose Survey\: Unadjusted Scale Score\\
+PercHostil\_Unadj & Perceived Hostility Survey: Unadjusted Scale Score\\
+PercReject\_Unadj & Perceived Rejection Survey: Unadjusted Scale Score\\
+PercStress\_Unadj & Perceived Stress Survey: Unadjusted Scale Score\\
+PosAffect\_Unadj & Positive Affect Survey: Unadjusted Scale Score\\
+Sadness\_Unadj & Sadness Survey: Unadjusted Scale Score\\
+SelfEff\_Unadj & Self-Efficacy Survey: Unadjusted Scale Score\\
+\midrule
+\multicolumn{2}{l}{Emotion (Penn Emotion Recognition Test)}\\
+\midrule
+ER40ANG & Number of Correct Anger Identifications\\
+ER40FEAR & Number of Correct Fear Identifications\\
+ER40NOE & Number of Correct Neutral Identifications\\
+ER40SAD & Number of Correct Sad Identifications\\
+ER40\_CR & Number of Correct Responses\\
+ER40\_CRT & Correct Responses Median Response Time (ms)\\
+\midrule 
+\\ % need for new page
+\\ % need for new page
+\midrule 
+\multicolumn{2}{l}{In-Scanner Task Performance}\\
+\midrule
+Emotion\_Task\_Face\_Acc & Accuracy \% during FACE blocks in EMOTION task\\
+Relational\_Task\_Acc & Average accuracy \% during RELATIONAL task\\
+Social\_Task\_Perc\_Random & Overall \% of stimuli that the subject rated as 'random' in SOCIAL task\\
+Social\_Task\_Perc\_TOM & Overall \% of stimuli that received a 'social' rating in SOCIAL task\\
+WM\_Task\_Acc & Accuracy across all conditions in working memory task\\
+\midrule
+\multicolumn{2}{l}{Language}\\
+\midrule
+Language\_Task\_Math\_Avg & Language Task MATH difficulty level\\
+Language\_Task\_Story\_Avg & Language Task STORY difficulty level\\
+\midrule
+\multicolumn{2}{l}{Motor (NIH Toolbox)}\\
+\midrule
+Dexterity\_Unadj & 9-hole Pegboard Dexterity Test: Unadjusted Scale Score\\
+Endurance\_Unadj & 2-minute Walk Endurance Test: Unadjusted Scale Score \\
+GaitSpeed\_Comp & 4-Meter Walk Gait Speed Test: Computed Score\\
+Strength\_Unadj & Grip Strength Test: Unadjusted Scale Score\\
+\midrule
+\multicolumn{2}{l}{Personality (Neuroticism/Extroversion/Openness Five Factor Inventory)}\\
+\midrule
+NEOFAC\_A & Agreeableness\\
+NEOFAC\_C & Conscientiousness\\
+NEOFAC\_E & Extraversion\\
+NEOFAC\_N & Neuroticism\\
+NEOFAC\_O & Openness to Experience\\
+\midrule
+\multicolumn{2}{l}{Psychiatric and Life Function (Achenbach Adult Self-Report)}\\
+\midrule
+ASR\_Aggr\_T & Aggressive Behavior Gender and Age Adjusted T-score\\
+ASR\_Anxd\_Pct & Anxious/Depressed Gender and Age Adjusted T-score\\
+ASR\_Attn\_T & Attention Problems Gender and Age Adjusted T-score\\
+ASR\_Extn\_T & Externalizing Gender and Age Adjusted T-score\\
+ASR\_Intn\_T & Internalizing Gender and Age Adjusted T-score\\
+ASR\_Intr\_T & Intrusive Gender and Age Adjusted T-score\\
+ASR\_Rule\_T & Rule Breaking Behavior Gender and Age Adjusted T-score\\
+ASR\_Soma\_T & Somatic Complaints Gender and Age Adjusted T-score\\
+ASR\_TAO\_Sum & Sum of Thought, Attention, and Other Problems Raw Score\\
+ASR\_Thot\_T & Thought Problems Gender and Age Adjusted T-score\\
+ASR\_Totp\_T & Total Problems Gender and Age Adjusted T-score \\
+ASR\_Witd\_T & Withdrawn Gender and Age Adjusted T-score\\
+\midrule
+\multicolumn{2}{l}{Sensory}\\
+\midrule
+Mars\_Final & Mars Final Contrast Sensitivity Score\\
+Odor\_Unadj & NIH Toolbox Odor Identification Age 3+ Unadjusted Scale Score\\
+PainInterf\_Tscore & NIH Toolbox Pain Interference Survey Age 18+: T-score \\
+Taste\_Unadj & NIH Toolbox Regional Taste Intensity Age 12+ Unadjusted Scale Score \\
+\bottomrule
+%\end{tabular}
+\end{longtable}
+\label{tab:phenotypes-hcp}
+
+\newpage
+\section{Philadelphia Neurodevelopmental Cohort (PNC)}
+List of phenotypes used from the PNC dataset
+\begin{longtable}{ll}
+%\label{tab:phenotypes-pnc}
+%\begin{table}[!ht]
+%\begin{tabularx}{\textwidth}{lX}
+\toprule
+\textbf{Variable} & \textbf{Description}\\
+\midrule
+\multicolumn{2}{l}{Letter N-Back (LNB) task}\\
+\midrule
+LNB\_MCR & Number of Correct Responses to for 1-Back and 2-Back Trials\\
+LNB\_MRTC & Mean of the Median Response Time for Correct Responses for 1-Back (TP)\\
+& and for 2-Back (TP) Trials\\
+\midrule
+\multicolumn{2}{l}{Motor Praxis (MP) task}\\
+\midrule
+MP\_MP2RTCR & Median Response Time for Correct Mouse Click Responses\\
+\midrule
+\multicolumn{2}{l}{Penn Age Differentiation Test (PADT)}\\
+\midrule
+PADT\_A & Total Correct Responses for All Test Trials, by genus\\
+PADT\_PC & Percent Correct Responses for All Test Trials, by genus\\
+PADT\_SAME\_PC & Percent Correct Responses to Test Trials with No Age Difference, by genus\\
+PADT\_T & Median Response Time for All Test Trials, by genus\\
+\midrule
+\multicolumn{2}{l}{Penn Conditional Exclusion Test (PCET)}\\
+\midrule
+PCET\_ACC2 & Calculated Accuracy Measure\\
+PCET\_CAT & Number of Categories Achieved\\
+\midrule
+\multicolumn{2}{l}{Penn Continuous Performance Test (PCPT)}\\
+\midrule
+PCPT\_T\_FP & Total of Incorrect Responses to Number Trials (TP) and Letter Trials (FP)\\
+PCPT\_T\_FPRT & Median Response Time for Incorrect Responses to Number Trials (TP)\\
+& and Letter Trials (TP)\\
+PCPT\_T\_TP & Total of Correct Responses to Number Trials (TP) and Letter Trials (TP)\\
+PCPT\_T\_TPRT & Median Response Time for Correct Responses to Number Trials\\
+& (TP) and Letter Trials (TP)\\
+\midrule
+\multicolumn{2}{l}{Penn Emotion Differentiation Test (PEDT)}\\
+\midrule
+PEDT\_A & Total Correct Responses for All Test Trials, by genus\\
+PEDT\_ANG\_PC & Percent of Correct Responses for Anger Trials, by genus\\
+PEDT\_FEAR\_PC & Percent of Correct Responses for Fear Trials, by genus\\
+PEDT\_HAP\_PC & Percent of Correct Responses for Happy Trials, by genus\\
+PEDT\_PC & Percent of Correct Responses for All Test Trials, by genus\\
+PEDT\_SAD\_PC & Percent of Correct Responses for Sad Trials, by genus\\
+PEDT\_SAME\_PC & Percent Correct Responses to Test Trials with Neutral Difference, by genus\\
+PEDT\_T & Median Response Time for All Test Trials, by genus\\
+\midrule
+\multicolumn{2}{l}{Penn Emotion Identification Test (PEIT)}\\
+\midrule
+PEIT\_CR & Total Correct Responses for All Test Trials, by genus\\
+PEIT\_CRT & Median Response Time for Total Correct Test Trial Responses, by genus\\
+\midrule
+\multicolumn{2}{l}{Penn Face Memory task (PFMT)}\\
+\midrule
+PFMT\_IFAC\_RTC & Median Response Time for Total Correct Test Trial Responses\\
+PFMT\_IFAC\_TOT & Total Correct Responses for All Test Trials\\
+\midrule
+\multicolumn{2}{l}{Penn Line Orientation Test (PLOT)}\\
+\midrule
+PLOT\_PC & Percent Correct Responses for All Test Trials, by genus\\
+PLOT\_TC & Total Correct Responses for All Test Trials, by genus\\
+PLOT\_TCRT & Median Response Time for Correct Trials, by genus\\
+\midrule
+\multicolumn{2}{l}{Primary Mental Abilities Test (PMAT)}\\
+\midrule
+PMAT\_CR & Total Correct Responses for All Test Trials, by genus\\
+\midrule
+\multicolumn{2}{l}{Penn Verbal Reasoning Test (PVRT)}\\
+\midrule
+PVRT\_CR & Total Correct Responses for All Test Trials, by genus\\
+PVRT\_RTCR & Median Response Time for Correct Verbal Reasoning Responses, by genus\\
+PVRT\_RTER & Median Response Time for Incorrect Verbal Reasoning Responses, by genus\\
+\midrule
+\\
+\midrule % needed for new page
+\multicolumn{2}{l}{Penn Word Memory task (PWMT)}\\
+\midrule
+PWMT\_KIWRD\_RTC & Median Response Time for Total Correct Test Trial Responses\\
+PWMT\_KIWRD\_TOT & Total Correct Responses for All Test Trials\\
+\midrule
+\multicolumn{2}{l}{Visual Object Learning Test (VOLT)}\\
+\midrule
+VOLT\_SVT & Total Correct Responses for All Test Trial\\
+VOLT\_SVTCRT & Median Response Time for Total Correct Responses\\
+VOLT\_SVTIRT & Median Response Time for Incorrect Responses\\
+\midrule
+\multicolumn{2}{l}{Wide Range Achievement Test (WRAT)}\\
+\midrule
+WRAT\_CR\_RAW & Total Raw Score\\
+WRAT\_CR\_STD & Total Standard Score\\
+\bottomrule
+%\end{longtable}
+%\end{tabularx}
+\end{longtable}
+
+\end{document}
